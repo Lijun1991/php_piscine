@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+}
+
+.periodic {
+  position: relative;
+  height: 200px;
+  margin-right: -1px;
+}
+
+.periodic-row {
+  clear: both;
+  height: 25%;
+}
+
+.cell {
+  float: left;
+  position: relative;
+  width: 5.55%;
+  height: 100%;
+}
+
+.element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 1px;
+  right: 1px;
+  border: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+  background-color: rgba(0, 128, 128, 0.6);
+}
+
+.cell:hover .element {
+  border-color: rgba(0,0,0,0.1);
+  z-index: 1;
+  
+  background-color: rgba(0, 128, 128, 0.9);
+}
+
+.at_num {
+  top: 4px;
+  right: 5px;
+  font-size: 10px;
+  text-align: right;
+}
+
+.symbol {
+  position: absolute;
+  font-weight: bold;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin-top: -4px;
+  font-size: 14px;
+  line-height: 1;
+  height: 9px;
+  color: rgba(255,255,255,0.9);
+}
+
+.at_details {
+  position: absolute;
+  top:70%;
+  font-size: 7px;
+  color: black;
+  text-align: left;
+}
